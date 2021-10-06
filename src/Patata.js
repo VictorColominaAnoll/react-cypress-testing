@@ -1,6 +1,6 @@
 function Patata(){
     return (
-        <div>Quack</div>
+        <a href="/potatoes">PATATA</a>
     )
 }
 
