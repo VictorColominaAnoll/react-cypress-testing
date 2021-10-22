@@ -24,3 +24,11 @@ describe("Let's write some inputs", () => {
 
   })
 })
+
+describe("Let's break the test", () => {
+  it('breaks', () => {
+    cy.visit("/")
+
+    cy.get('#no-exists').type('onichan');
+  })
+})
