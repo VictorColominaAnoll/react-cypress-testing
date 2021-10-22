@@ -21,11 +21,11 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm run start
+          build: yarn run build
+          start: yarn start --forzen-lockfile
           wait-on: "http://localhost:3000"
